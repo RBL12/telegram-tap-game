@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tap Game</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; background-color: #fafafa; }
+    h1 { margin-top: 50px; }
+    button { font-size: 24px; padding: 10px 20px; margin-top: 30px; }
+    #score { font-size: 28px; margin-top: 20px; color: #333; }
+  </style>
+</head>
+<body>
+  <h1>Tap the Button!</h1>
+  <button onclick="increment()">Tap Me!</button>
+  <div id="score">Score: 0</div>
+
+  <script>
+    let score = 0;
+    function increment() {
+      score++;
+      document.getElementById('score').innerText = 'Score: ' + score;
+    }
+  </script>
+</body>
+</html>
